@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисован</title>
+</head>
+<body>
+    <script>
+    let startBox = document.createElement('div');
+    document.body.append(startBox);
+
+    function draw(size, rotate, elem) 
+    {
+        if (size>1) {
+        let box = document.createElement('div');
+        box.style.width = size + 'px';
+        box.style.height = size + 'px';
+        box.style.border = '1px solid #54FF9F';
+        box.style.transform = 'rotate('+rotate+'deg) translateX('+size*0.5+'px) translateY('+size*0.3+'px)';
+        elem.append(box);
+
+        draw(size/1.5, ++rotate , box);}
+    }
+
+      draw(600, 179, startBox);
+
+    </script>
+</body>
+</html>
