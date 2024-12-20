@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 октября 2024</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=iqO5y-JxZFFCi3qeZLt5xjkhlWdP2MjYX1J_-eRlDWyp009R8y-21Me-W4M2ItUz6dCrdee8IjZ56M00xxkQHA" charset="UTF-8"></script></head>
+    <style>
+    body{
+        background-image: url(Alola.webp);
+    }
+</style>
+<body>
+</body>
+<script>
+    let eevee = document.createElement('img');
+    eevee.src = 'eevee-eevee-pokemon.gif';
+    document.body.append(eevee);
+
+    let berry = document.createElement('img');
+    berry.src = 'berry.jpeg';
+    document.body.append(berry);
+    berry.style.position = 'fixed';
+    berry.style.left = '1500px'
+    berry.style.width = '500px';
+
+    let left = 100;
+    let step = 1;
+
+    eevee.style.position = 'fixed';
+    eevee.style.top = '100px';
+    eevee.style.left = left + 'px';
+    eevee.style.transform = 'rotateY(180deg)';
+
+    function moveEevee(){
+        left = left + step;
+        eevee.style.left = left + 'px';
+        if(left > 1000){
+            step = step *(-1);
+            eevee.style.transform = 'rotateY(0deg)';
+        }
+        if(left<0){
+            step = step*(-1);
+            eevee.style.transform = 'rotateY(180deg)';
+        }
+    }
+    setInterval(moveEevee, 1);
+</script>
+</html>
