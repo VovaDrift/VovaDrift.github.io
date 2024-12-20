@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 ноября 2024</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ed7jsPpOaMcXrBUKgYPzty2ppQvTneQ7qQzMLcvMHRUMjpWYGYj8WCySK6rI5Zt-7qGP9xZ0yJ6gS8gWRu6pKA" charset="UTF-8"></script></head>
+<style>
+    input{
+        height: 50px;
+        width: 200px;
+    }
+    button{
+        margin: 5px;
+        height: 30px;
+        background: LightSkyBlue;
+    }
+    button:hover{
+        background: Navy;
+        color: Azure;
+    }
+    #result{
+        height: 40px;
+        font-size: large;
+        color: navy;
+    }
+</style>
+<body>
+    <input type="text" id="myText" placeholder="Текст">
+    <button onclick="f1()">Вывести мой текст</button>
+    <div id="result"></div>
+</body>
+<script>
+    function f1(){
+        let string = myText.value;
+        result.innerText = string;
+    }
+</script>
+</html>
